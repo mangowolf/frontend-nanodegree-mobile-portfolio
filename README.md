@@ -1,3 +1,47 @@
+#Instructions to run project
+
+1. Go to the [this](https://mangowolf.github.io/frontend-nanodegree-mobile-portfolio/) URL Link.
+
+2. Copy the URL into the [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fmangowolf.github.io%2Ffrontend-nanodegree-mobile-portfolio%2Fviews%2Fpizza.html%23randomPizzas&tab=desktop) website.
+
+3. View the scores for mobile and desktop to see that they are score at or above 90/100.
+
+4. Go to [my Github Page](https://mangowolf.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html?#randomPizzas) to visit the performance optimized version of the Udacity project detailed below.
+
+5. Go into developer tools for your web browser and navigate to the timeline panel.
+
+6. Select the record button and then scroll up and down on the website to generate the pizza mover javascript.
+
+7. Then scroll down to the slider bar and make a new selection to change the pizza sizes.
+
+8. Stop the recording and generate the timeline.
+
+9.	View the timeline for performance issues.
+
+10. Then Select the Console option to view the fps for the pageload and for the pizza resizing when selecting the pizza resizing slider.
+
+##Optimizations made
+
+1. Optimized and resized images
+
+2. Modified index.html script to be asynchronous
+
+3. Modified link tag in header to indicate media as print
+
+4. Modified media attribute to link tag to indicate portrait mode for mobile
+
+5. Removed unnecessary fonts
+
+6. Inlined CSS for above the fold content
+
+7. Moved render blocking scripts to the bottom of the index.html document.
+
+8. Moved document selector outside of for loop in changePizzaSizes function and put in variable outside of loop.
+
+9. Modified changePizzaSizes function to define variables dx and newwidth outside of for loop.
+
+10. MOdified updatePositions function to calculate scrollTop outside of for loop.
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
@@ -32,7 +76,7 @@ Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 ####Part 2: Optimize Frames per Second in pizza.html
 
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
+To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js.
 
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
